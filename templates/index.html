@@ -1,0 +1,42 @@
+<html>
+    <head>
+<title>Hello</title>
+<style>
+    .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+table, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+</style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">This is the "GET" Method</h1>
+        <form action="calc" method="GET">
+            <table class="center">
+            <tbody>
+            <tr>
+            <td>Enter Value 1 :</td>
+            <td><input name="value1" type="number" /></td>
+            </tr>
+            <tr>
+            <td>Enter Value 2 :</td>
+            <td><input name="value2" type="number" /></td>
+            </tr>
+            <tr>
+            <td>Enter operation " + , -, * " :</td>
+            <td><input name="operation" type="text" /></td>
+            </tr>
+            <tr>
+            <td><input type="submit" value="Submit" /></td>
+            <td>{{go}}</td>
+            </tr>
+            </tbody>
+            </table>
+            </form>
+            <h1 style="text-align: center;"><a href="pos">For the "POST" Method</a></h1>
+          
+          
+    </body>
+</html>

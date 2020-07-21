@@ -1,0 +1,41 @@
+<html>
+    <head>
+<title>Hello</title>
+<style>
+    .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+table, tr, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+</style>
+    </head>
+    <body>
+        <h1 style="text-align: center;">This is the "POST" Method</h1>
+        <form action="calc1" method="POST">
+            {% csrf_token %}
+                      <table class="center">
+                      <tbody>
+                      <tr>
+                      <td>Enter Value 1 :</td>
+                      <td><input name="value_1" type="number" /></td>
+                      </tr>
+                      <tr>
+                      <td>Enter Value 2 :</td>
+                      <td><input name="value_2" type="number" /></td>
+                      </tr>
+                      <tr>
+                      <td>Enter operation " + , -, * " :</td>
+                      <td><input name="operation_1" type="text" /></td>
+                      </tr>
+                      <tr>
+                      <td><input type="submit" value="Submit" /></td>
+                      <td>{{do}}</td>
+                      </tr>
+                      </tbody>
+                      </table>
+                      </form>
+                      <h1 style="text-align: center;"><a href="/">For the "GET" Method</a></h1>
+    </body>
+</html>
